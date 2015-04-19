@@ -1,0 +1,13 @@
+
+-------------------------------------------------------------------------
+date: 2015.4.19
+author: luoxn28
+instruction:
+	在浏览器输入主机地址:端口号/url地址，例如：127.0.0.1:54321/www.baidu.com
+	按下Enter后，如果是GET方法后，server提取url地址，然后调用Python脚本下载
+	www.baidu.com的网页内容，并保存为htdocs/index.html文件，并通过socket发送
+	给浏览器，此时浏览器中就显示了www.baidu.comu网页
+tag:
+	该版本的Python脚本只是简单的爬虫脚本，只是下载对应网页的源代码，并保存到一个
+	文件中
+	servec.c中的用的是阻塞型函数accept，通过for循环接受connect请求
